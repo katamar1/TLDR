@@ -1,0 +1,16 @@
+ {
+    "manifest_version": 3,
+    "name": "TL:DR",
+    "version": "1.0",
+    "description": "Gives a summary of long pieces of text, you can change the voice of the summary using AI",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "activeTab",
+      "nativeMessaging",
+      "scripting",
+      "storage"
+    ]
+  }
+ 
