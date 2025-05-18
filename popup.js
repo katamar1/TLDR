@@ -35,8 +35,6 @@ function createPrompt(currentURL, userName) {
       const parser = new DOMParser();
       const doc = parser.parseFromString(html, 'text/html');
       const textContent = doc.body.innerText;
-
-      const apiKey = "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"; 
       const prompt = `you are ${userName}. you must speak like them at all times. you must over exaggerate your character to a fault! in character, give a brief summary of the following content on a webpage: ${textContent}. MUST keep brief, MAX 100 words`;
 
       const maxTokenLimit = 190;
