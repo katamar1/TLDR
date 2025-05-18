@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const userName = document.getElementById('fname').value;
     document.getElementById('userName').textContent = userName || "none";
     const webText = revealText();
-    const apiKey = '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';
 
     async function generateGPTResponse(text) {
       const prompt = `Summarize this website text: ${text}, as if you were ${userName}. Do not include any original preface by you, just get right into what they would say.`;
